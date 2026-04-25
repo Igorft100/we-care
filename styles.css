@@ -1,0 +1,189 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container-rigth {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding-left: 60px;
+    padding-top: 217px;
+}
+
+header {
+    margin: 44px 0 144px 76px;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+a {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #989D9C;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 23px;
+}
+
+.button-header {
+    background: #665AE1;
+    border-radius: 20.5px;
+    width: 130px;
+    height: 41px;
+    border: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.logo-image {
+    width: 568px;
+    height: 500px;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;
+    color: #515151;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 71px;
+    color: #515151;
+    margin: 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #848484;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+    text-align: justify;
+}
+
+.button-div-rigth {
+    width: 239px;
+    height: 64px;
+    border-radius: 30px;
+    background: #ADFF00;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 64px;
+    color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    header {
+        display: none;
+    }
+
+    .container-left,
+    .container-rigth {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-left {
+        order: 1;
+        margin: 149px auto 24px;
+    }
+
+    .container-rigth {
+        order: 2;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .logo-image {
+        height: auto;
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+        position: static;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 100%;
+        margin: 0 auto 0;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 100%;
+        margin: 7px auto 17px;
+    }
+
+    p {
+        display: none;
+    }
+
+    .button-div-rigth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 340px) {
+
+    .container-left {
+        margin: 110px auto 0;
+    }
+
+    .container-rigth {
+        margin: 0 auto;
+    }
+}
